@@ -28,6 +28,9 @@ class AudioViewController extends GetxController {
   var url = TextEditingController();
   var transcribeStatus = false.obs;
   Future<void> transcribeAudio(audiourl) async {
+    // await Future.delayed(Duration(seconds: 10));
+    // transcribeStatus.value = true;
+    // return;
     var url = 'http://127.0.0.1:8000/transcribe_audio';
     var formData = dio.FormData();
     formData.fields.addAll([MapEntry("url", audiourl)]);
