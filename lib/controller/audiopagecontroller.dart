@@ -45,7 +45,7 @@ class AudioViewController extends GetxController {
     customerObjection.value = data['customer_objection'];
     customerSteps.value = data['customer_steps'];
     agentImprovement.value = data['agent_improvement'];
-    // entity_data = data['entity_list'];
+    entity_data.value = data['entity_list'];
     sentiment.value = data['sentiment'];
     print("got sentiment=${sentiment.value}");
     transcribeStatus.value = true;
